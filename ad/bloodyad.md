@@ -3,7 +3,7 @@
 
 ## Set password
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' set password <target_user> '<passwd|Password123!>'
+bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' set password <target_user> '<new_passwd|Password123!>'
 ```
 
 ## Get writable

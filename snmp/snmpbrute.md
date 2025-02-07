@@ -3,5 +3,5 @@
 
 ## Brute force community strings
 ```
-snmpbrute.py -t <ip> -f /usr/share/seclists/Discovery/SNMP/common-snmp-community-strings.txt
+snmpbrute.py -t <ip> -f <wordlist|/usr/share/seclists/Discovery/SNMP/common-snmp-community-strings.txt>
 ```

@@ -3,5 +3,5 @@
 
 ## Execute RustHound
 ```
-rusthound -d <domain> -u <user>@<domain> -p '<passwd>' -f <target> -n <ip> -z -o rusthound
+rusthound -d <domain> -u <user>@<domain> -p '<passwd>' -f <target> -n <ip> -z -o <output_dir|rusthound>
 ```

